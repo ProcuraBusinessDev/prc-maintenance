@@ -1,0 +1,89 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  background-color: #F5F5F5;
+}
+
+/* Stack layout */
+.stack {
+  display: grid;
+  justify-items: center;
+  row-gap: 0;
+  width: 100%;
+}
+
+.full-page {
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 8rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Logo */
+.logo {
+  width: 240px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Typography */
+.error-code {
+  font-size: 3rem;
+  font-weight: 00;
+  color: #2D3748; /* gray.800 equivalent */
+}
+
+.error-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  color: #2D3748;
+  margin-top: 0.5rem;
+}
+
+.error-message {
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 36rem;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #6d7785; /* gray.500 equivalent */
+}
+
+/* Button */
+.home-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  background-color: #3182CE; /* You can adjust this to match your brand color */
+  border-radius: 0.375rem;
+  transition: background-color 0.2s;
+}
+
+.home-button:hover {
+  background-color: #2B6CB0;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .error-message {
+    font-size: 1rem;
+  }
+}
